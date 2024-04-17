@@ -69,12 +69,13 @@ public class RunBaselineScenario {
         Set<String> mode_Set2 = new HashSet<String>();
         mode_Set2.add("bike");
         new MultimodalNetworkCleaner(network).run(mode_Set2);
+        Set<String> mode_Set3 = new HashSet<String>();
+        mode_Set3.add("truck");
+        new MultimodalNetworkCleaner(network).run(mode_Set3);
         new NetworkWriter(network).write("./networkCleaned.xml.gz");
     }
 
     public void run(){
-        controler.addOverridingModule(new SBBTransitModule());
-        controler.addOverridingModule(new SwissRailRaptorModule());
         controler.run();
     }
 
