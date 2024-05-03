@@ -20,6 +20,7 @@
 
       <!-- weekly "pre-release 1621" -->
       <matsim.version>14.0-PR1621</matsim.version>
+      <geotools.version>24.2</geotools.version>
       <!-- development head -->
       <!--<matsim.version>14.0-SNAPSHOT</matsim.version>-->
 
@@ -142,6 +143,32 @@
         <groupId>org.matsim.contrib</groupId>
         <artifactId>sbb-extensions</artifactId>
         <version>${matsim.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.geotools</groupId>
+        <artifactId>gt-main</artifactId>
+        <version>${geotools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.geotools</groupId>
+        <artifactId>gt-geopkg</artifactId>
+        <version>${geotools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.geotools</groupId>
+        <artifactId>gt-shapefile</artifactId>
+        <version>${geotools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.geotools</groupId>
+        <artifactId>gt-epsg-hsql</artifactId>
+        <version>${geotools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.geotools</groupId>
+        <artifactId>gt-grid</artifactId>
+        <version>${geotools.version}</version>
       </dependency>
 
       <dependency>
