@@ -36,8 +36,8 @@ import java.io.IOException;
 
 public class ConvertPlanXmlToCsv {
 
-    private static final String CSV_HEADER = "Person ID,Element Type,Activity Type,Link,X Coordinate,Y Coordinate," +
-            "End Time,Mode,Dep Time,Trav Time,Route Type,Start Link,End Link,Route Trav Time,Distance, Route";
+    private static final String CSV_HEADER = "personID,elementType,activityType,link,x,y,endTime," +
+            "mode,depTime,travTime,routeType,startLink,endLink,routeTravTime,distance,route";
 
     public static void main(String[] args) {
         if (args.length != 2) {
